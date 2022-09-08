@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  padding: 36px;
+}
+
+.header {
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.header_img {
+  height: 100%;
+  margin-right: 20px;
+  filter: brightness(90%);
+}
+
+.header_img:hover {
+  height: 120%;
+  filter: brightness(160%);
+  margin-right: 4px;
+}
+
+.header_title {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.header_project {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header_greeting {
+  font-size: 1rem;
+  margin-right: auto;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 10px 16px;
+  margin: 5px;
+}
+
+.form--input {
+  border-radius: 5px;
+  border: 1px solid #d5d5d8;
+  text-indent: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.meme--image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme_img {
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* ____ Metiendo boton contador en Header _________________________________ */
+.counter {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 50px;
+  margin-left: 10px;
+  font-size: 0.6rem;
+}
+
+.counter > button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #737373;
+  color: #d9d9d9;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin-top: 2px;
+}
+
+.counter > button:hover {
+  background-color: #404040;
+  color: #d9d9d9;
+}
+
+.counter > button:focus {
+  outline: none;
+}
+
+.counter--count {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+  opacity: 70%;
+}
+
+.counter--plus {
+  margin-left: -10px;
+  z-index: 1;
+}
+
+.counter--minus {
+  margin-right: -10px;
+  z-index: 1;
+}
+/* _____________________________________ */
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.state--title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.state--value {
+  background-color: #a818da;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* _____________________________________________________________________ */
+.all-boxes {
+  display: inline-block;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 5px;
+}
+/* _____________________________________________________________________ */
