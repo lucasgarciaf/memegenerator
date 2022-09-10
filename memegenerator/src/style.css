@@ -47,8 +47,14 @@ main {
 }
 
 .header_greeting {
+  font-size: 2rem;
+  margin-right: auto;
+}
+.header_greeting:hover {
   font-size: 1rem;
   margin-right: auto;
+  transition: 3s;
+  visibility: hidden;
 }
 
 .form {
